@@ -2,6 +2,7 @@
 
 > **A tiny evolving digital ecosystem running entirely on a Raspberry Pi
 > Pico and a 64×64 HUB75 RGB LED matrix.**
+<img width="1170" height="1560" alt="IMG_CE6B34BD-2A09-42E9-AEA9-16DB6C803DCD" src="https://github.com/user-attachments/assets/82400406-2a44-46d8-b647-9c8602ef7fb9" />
 
 
 ## Overview
@@ -106,7 +107,6 @@ Why?
 
 # Running
 
-<img width="1170" height="1560" alt="IMG_CE6B34BD-2A09-42E9-AEA9-16DB6C803DCD" src="https://github.com/user-attachments/assets/82400406-2a44-46d8-b647-9c8602ef7fb9" />
 
 
 The simulation never follows a scripted sequence.
