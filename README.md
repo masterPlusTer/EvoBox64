@@ -3,14 +3,7 @@
 > **A tiny evolving digital ecosystem running entirely on a Raspberry Pi
 > Pico and a 64×64 HUB75 RGB LED matrix.**
 
-```{=html}
-<p align="center">
-```
-![Hardware](95CA754E-1E0C-48F2-8F0F-C9C4CAEA1A6F.jpeg)
 
-```{=html}
-</p>
-```
 ## Overview
 
 EvoBox64 is an artificial life experiment designed to run continuously
@@ -56,7 +49,7 @@ The entire simulation runs from a single `code.py`.
 
 ### Rear Wiring
 
-![Rear wiring](IMG_CE6B34BD-2A09-42E9-AEA9-16DB6C803DCD.jpeg)
+
 
 The Pico is mounted directly behind the panel using a custom harness.
 The HUB75 ribbon cable connects the controller to the display while a
@@ -113,7 +106,8 @@ Why?
 
 # Running
 
-![Simulation](IMG_DC69CDAC-C3F6-4537-A513-BE108877E4FC.jpeg)
+<img width="1170" height="1560" alt="IMG_CE6B34BD-2A09-42E9-AEA9-16DB6C803DCD" src="https://github.com/user-attachments/assets/82400406-2a44-46d8-b647-9c8602ef7fb9" />
+
 
 The simulation never follows a scripted sequence.
 
