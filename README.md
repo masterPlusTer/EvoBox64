@@ -50,6 +50,7 @@ The entire simulation runs from a single `code.py`.
 
 ### Rear Wiring
 
+<img width="1152" height="1536" alt="95CA754E-1E0C-48F2-8F0F-C9C4CAEA1A6F" src="https://github.com/user-attachments/assets/1b7c9f9e-1162-4bbe-8dd8-13358e65dbb9" />
 
 
 The Pico is mounted directly behind the panel using a custom harness.
@@ -158,6 +159,10 @@ The goal is to create a tiny world that can be left running for days,
 allowing complex behaviour to emerge from a small set of simple rules.
 
 Sometimes the world flourishes.
+
+<img width="1170" height="1560" alt="IMG_DC69CDAC-C3F6-4537-A513-BE108877E4FC" src="https://github.com/user-attachments/assets/e0e599a8-3863-467a-9683-dacfe64c3058" />
+<img width="1170" height="1560" alt="IMG_CE6B34BD-2A09-42E9-AEA9-16DB6C803DCD" src="https://github.com/user-attachments/assets/cd2854c9-53ab-4ece-9a21-087f78161bbb" />
+
 
 Sometimes everything collapses.
 
