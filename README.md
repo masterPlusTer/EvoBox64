@@ -57,24 +57,39 @@ The Pico is mounted directly behind the panel using a custom harness.
 The HUB75 ribbon cable connects the controller to the display while a
 dedicated 5 V supply powers the LEDs.
 
-## Pin Mapping
 
-  HUB75   Pico GPIO
-  ------- -----------
-  R1      GP2
-  G1      GP3
-  B1      GP4
-  R2      GP5
-  G2      GP8
-  B2      GP9
-  A       GP10
-  B       GP16
-  C       GP18
-  D       GP20
-  E       GP22
-  CLK     GP11
-  LAT     GP12
-  OE      GP13
+## HUB75 Pin Mapping
+
+| HUB75 Signal | Raspberry Pi Pico GPIO | Description |
+| :----------: | :--------------------: | ----------- |
+| **R1** | **GP2** | Red data for the **upper half** of the display. |
+| **G1** | **GP3** | Green data for the **upper half** of the display. |
+| **B1** | **GP4** | Blue data for the **upper half** of the display. |
+| **R2** | **GP5** | Red data for the **lower half** of the display. |
+| **G2** | **GP8** | Green data for the **lower half** of the display. |
+| **B2** | **GP9** | Blue data for the **lower half** of the display. |
+| **A** | **GP10** | Row address bit 0. Used to select the active row pair. |
+| **B** | **GP16** | Row address bit 1. |
+| **C** | **GP18** | Row address bit 2. |
+| **D** | **GP20** | Row address bit 3. |
+| **E** | **GP22** | Row address bit 4. Required for **64×64 (1/32 scan)** HUB75 panels. |
+| **CLK** | **GP11** | Pixel clock. Each pulse shifts one column of RGB data into the panel. |
+| **LAT** *(Latch/STB)* | **GP12** | Transfers the shifted data to the output registers, updating the displayed row. |
+| **OE** *(Output Enable)* | **GP13** | Enables or disables the LEDs. Also used for brightness control through PWM. |
+
+### How HUB75 Works
+
+A HUB75 display does **not** refresh the entire screen at once.
+
+Instead, the controller continuously performs the following sequence:
+
+1. Selects a row pair using the **A-E** address lines.
+2. Shifts **64 columns** of RGB pixel data into the panel using **CLK**.
+3. Copies the new data to the output registers using **LAT**.
+4. Briefly enables the LEDs through **OE**.
+5. Repeats the process for the next row pair.
+
+This scanning process happens hundreds or even thousands of times per second, creating the illusion of a stable, full-color image.
 
 ------------------------------------------------------------------------
 
